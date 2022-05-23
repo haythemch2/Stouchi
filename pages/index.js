@@ -1,4 +1,4 @@
-import Trending from "../components/Trending";
+import Trending from "../components/trending";
 import CMCtable from "../components/cmc-table/cmcTable";
 import Header from "../components/header";
 import SwapCryptoModal from "../components/swapCryptoModal";
