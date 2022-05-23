@@ -1,15 +1,17 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Trending from "../components/Trending";
+import CMCtable from "../components/cmc-table/cmcTable";
+import Header from "../components/header";
+import SwapCryptoModal from "../components/swapCryptoModal";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Stouchi</title>
-        <meta name="description" content="Blockchain Portofolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className="min-h-screen">
+      <Header />
+      <SwapCryptoModal />
+      <div className="mt-10" />
+      <Trending />
+      <div className="mt-20" />
+      <CMCtable />
     </div>
   );
 }
